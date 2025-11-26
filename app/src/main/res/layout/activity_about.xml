@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".AdminOperation.AboutActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="About Us"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        android:textStyle="bold">
+
+    </TextView>
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:alpha="0.5"
+        android:background="@color/black" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:text="
+VisitorFunds is committed to simplifying the administrative tasks of Head of Departments (HODs)\n\n
+Key Features:
+\n\n
+1) User Account Creation and Faculty Information:
+\n
+HODs can create their accounts and securely add visitor faulty information, including valid email addresses.
+Upon successful addition of a faculty member, an email is sent to their provided email address, containing a unique username and a link to access the faulty app.
+\n\n2) Lecture Activity Management:
+\n
+The admin application receives pending lecture activities from faculty members, allowing HODs to review and verify them.
+HODs have the ability to accept or reject pending lecture activities, ensuring accurate tracking and transparency.
+The application tracks faculty activity, providing valuable insights into the number of approved, rejected, and pending lectures.
+\n\n3) Billing Generation:
+\n
+HODs can generate lecturer bills in PDF format based on the selected month and year.
+The application allows for the inclusion of fixed salary amounts for theory and practical lectures, simplifying the billing process.
+\n\n4) Important Documents and Notices:
+\n
+The admin application provides access to essential documents, such as college timetables and notices, allowing for easy distribution to faculty members and clients.
+\n\n
+"            android:textColor="@color/detail_color"
+            android:textSize="18dp">
+
+        </TextView>
+    </ScrollView>
+
+</LinearLayout>

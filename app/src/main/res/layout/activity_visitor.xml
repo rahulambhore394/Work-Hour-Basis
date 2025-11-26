@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lavender"
+    android:orientation="vertical"
+    tools:context=".VisitorOperation.VisitorActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="20dp"
+        android:background="@color/white"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/lavender_border"
+            android:backgroundTint="@color/white"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Visitor Faculty Information"
+                android:textAlignment="center"
+                android:textColor="@color/lavender"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/uploadImage"
+                android:layout_width="200dp"
+                android:layout_height="138dp"
+                android:layout_gravity="center|top"
+                android:layout_marginTop="10dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/signimg" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Personal's Info..."
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_margin="10dp"
+                android:alpha="1"
+                android:background="@color/lavender" />
+
+            <EditText
+                android:id="@+id/uploadVname"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/lavender_border"
+                android:drawableStart="@drawable/baseline_person2_24"
+                android:drawablePadding="5dp"
+                android:gravity="start|center_vertical"
+                android:hint="Visitor Faculty Name"
+                android:inputType="text"
+                android:paddingLeft="16dp"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/uploadVemail"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/lavender_border"
+                android:drawableStart="@drawable/baseline_email_24"
+                android:drawablePadding="5dp"
+                android:gravity="start|center_vertical"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="18dp"
+                android:textColor="@color/black" />
+
+
+
+            <EditText
+                android:id="@+id/uploadVPnumber"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/lavender_border"
+                android:drawableStart="@drawable/baseline_phone_24"
+                android:drawablePadding="5dp"
+                android:maxLength="10"
+                android:gravity="start|center_vertical"
+                android:hint="Phone number"
+                android:inputType="phone"
+                android:paddingLeft="18dp"
+                android:textColor="@color/black" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="bottom"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/uploadVQualification"
+                    android:layout_width="match_parent"
+                    android:layout_height="54dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/lavender_border"
+                    android:drawableStart="@drawable/baseline_person_pin_24"
+                    android:gravity="start|center_vertical"
+                    android:hint="Qualification"
+                    android:inputType="text"
+                    android:padding="16dp"
+                    android:paddingLeft="16dp"
+                    android:textColor="@color/black" />
+
+                <LinearLayout
+                    android:layout_width="150dp"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/Yearspinner"
+                    android:layout_below="@+id/uploadVQualification"
+                    android:background="@drawable/lavender_border"
+                    android:layout_height="wrap_content">
+
+                    <Spinner
+                        android:id="@+id/year"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center">
+
+                    </Spinner>
+
+                </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:id="@+id/Branchspinner"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/lavender_border"
+                        android:layout_below="@+id/uploadVQualification"
+                        android:layout_toRightOf="@+id/Yearspinner"
+                        android:layout_height="wrap_content">
+
+                        <Spinner
+                            android:id="@+id/branch_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center">
+
+                        </Spinner>
+
+                    </LinearLayout>
+
+
+                <EditText
+                    android:id="@+id/uploadVSubject"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/Yearspinner"
+                    android:background="@drawable/lavender_border"
+                    android:drawableStart="@drawable/baseline_menu_book_24"
+                    android:drawablePadding="5dp"
+                    android:hint="Subject"
+                    android:inputType="text"
+                    android:paddingLeft="16dp"
+                    android:textColor="@color/black">
+
+                </EditText>
+            </RelativeLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Bank's Info..."
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_margin="10dp"
+                android:alpha="1"
+                android:background="@color/lavender" />
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/lavender_border"
+                android:drawableStart="@drawable/baseline_account_circle_24"
+                android:drawablePadding="5dp"
+                android:id="@+id/uploadVis_acc_no"
+                android:gravity="start|center_vertical"
+                android:hint="Account number"
+                android:inputType="number"
+                android:paddingLeft="16dp"
+                android:textColor="@color/black" />
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/lavender_border"
+                android:drawableStart="@drawable/baseline_switch_account_24"
+                android:drawablePadding="5dp"
+                android:gravity="start|center_vertical"
+                android:hint="Bank Name"
+                android:inputType="text"
+                android:id="@+id/uploadVis_bank_name"
+                android:paddingLeft="16dp"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/lavender_border"
+                android:drawableStart="@drawable/baseline_location_on_24"
+                android:drawablePadding="5dp"
+                android:gravity="start|center_vertical"
+                android:hint="Branch Name"
+                android:id="@+id/uploadVis_branch_name"
+                android:inputType="text"
+                android:paddingLeft="16dp"
+                android:textColor="@color/black" />
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/lavender_border"
+                android:drawableStart="@drawable/baseline_account_circle_24"
+                android:drawablePadding="5dp"
+                android:gravity="start|center_vertical"
+                android:hint="IFSC code"
+                android:inputType="text"
+                android:paddingLeft="16dp"
+                android:id="@+id/uploadVis_ifsc"
+                android:textColor="@color/black" />
+
+
+            <Button
+                android:id="@+id/saveButton"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="80dp"
+                android:text="Save"
+                android:textColor="@color/white"
+                android:background="@drawable/lavender_border2"
+                android:backgroundTint="@color/light_blue"
+                android:textSize="18sp"
+                app:cornerRadius="30dp" />
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</ScrollView>

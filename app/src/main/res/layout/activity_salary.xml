@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_blue"
+    android:orientation="vertical"
+    tools:context=".AdminOperation.SalaryActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="30dp"
+        app:cardCornerRadius="60dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="Salary"
+            android:textAlignment="center"
+            android:textColor="@color/light_blue"
+            android:textSize="30dp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/animation"
+            android:layout_width="302dp"
+            android:layout_height="224dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="80dp"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/money">
+
+        </com.airbnb.lottie.LottieAnimationView>
+
+        <EditText
+            android:id="@+id/vis_theory"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="330dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/lavender_border"
+            android:hint="Enter Rs Theory Conducted"
+            android:paddingStart="20dp">
+
+        </EditText>
+
+
+        <EditText
+            android:id="@+id/vis_practical"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="420dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/lavender_border"
+            android:hint="Enter Rs Practical Conducted"
+            android:paddingStart="20dp">
+
+        </EditText>
+
+        <Button
+            android:id="@+id/visitor_th_pr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="510dp"
+            android:layout_marginEnd="30dp"
+            android:background="@drawable/lavender_border"
+            android:backgroundTint="@color/light_blue"
+            android:text="Save"
+            android:textColor="@color/white"
+            android:textSize="20dp">
+
+        </Button>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

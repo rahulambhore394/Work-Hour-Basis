@@ -1,0 +1,58 @@
+<resources>
+    <string name="app_name">Main</string>
+    <string name="open_nav">Open Navigation Drawer</string>
+    <string name="close_nav">Close Navigation Drawer</string>
+    <string name="title_activity_visitor_info">VisitorInfo</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="select">Qualification</string>
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+    <item name="imageSlider" type="id" />
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string name="app_name1">Faculty Form</string>
+
+    <string name="institute_name">SHRI GURU GOBIND SINGHJI INSTITUTE OF ENGINEERING &amp; TECHNOLOGY</string>
+    <string name="institute_address">VISHNUPURI, NANDED - 431 606</string>
+    <string name="form_title">UG/PG Classes (For Guest Faculty only)</string>
+    <string name="form_subtitle">To be submitted in duplicate</string>
+
+    <string name="guest_faculty_name">Name of the Guest Faculty (In Block Letter)</string>
+    <string name="guest_faculty_address">Address of the Guest Faculty</string>
+
+    <string name="lecture_remuneration">Lecture Remuneration (at Rs. 900/- Per hr.)</string>
+    <string name="lecture_hours">No. of Lecture periods (60 mins)</string>
+    <string name="practical_remuneration">Practical Remuneration (at Rs. 450/- Per hr.)</string>
+    <string name="practical_hours">No. of Practical periods (2 hrs)</string>
+    <string name="local_conveyance">Local Conveyance (at Rs. 100/- Per day)</string>
+    <string name="conveyance_days">No. of Days</string>
+    <string name="paper_set">Paper set (at Rs. 50/- Per hr.)</string>
+    <string name="paper_set_hours">No. of Hours</string>
+    <string name="total_remuneration">Total Remuneration Claimed</string>
+
+    <string name="bank_details_title">Guest Faculty Bank Details</string>
+    <string name="bank_name">Bank Name</string>
+    <string name="branch">Branch</string>
+    <string name="ifsc_code">IFS Code</string>
+    <string name="account_no">Account No.</string>
+    <string name="mobile_no">Mobile No.</string>
+
+    <string name="submit_claim">Submit Claim</string>
+    <string name="faculty_details_header">Faculty Details</string>
+    <string name="remuneration_details_header">Remuneration Details</string>
+    <string name="lecture_class">Lecture Class (e.g., F.Y./S.Y./B.Tech.)</string>
+    <string name="practical_class">Practical Class (e.g., F.Y./S.Y./B.Tech.)</string>
+    <string name="remun_bill_department">DEPARTMENT OF INFORMATION TECHNOLOGY</string>
+    <string name="faculty_name_chb">Name of Faculty (C.H.B):</string>
+    <string name="duration">Duration:</string>
+    <string name="class_label">Class:</string>
+    <string name="generate_bill_pdf">Generate Bill PDF</string>
+    <string name="database_instance">https://clock-hour-basis-default-rtdb.firebaseio.com/</string>
+</resources>

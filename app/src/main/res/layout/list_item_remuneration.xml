@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_vertical">
+
+    <TextView
+        android:id="@+id/tvSrNo"
+        android:layout_width="30dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:background="@drawable/cell_border"
+        android:text="01"/>
+
+    <EditText
+        android:id="@+id/etSubject"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1.5"
+        android:background="@drawable/cell_border"
+        android:inputType="textCapWords"
+        android:textSize="12sp"
+        android:padding="4dp"/>
+
+    <EditText android:id="@+id/etAllocatedTh" style="@style/TableEditText"/>
+    <EditText android:id="@+id/etAllocatedPr" style="@style/TableEditText"/>
+    <EditText android:id="@+id/etConductedTh" style="@style/TableEditText"/>
+    <EditText android:id="@+id/etConductedPr" style="@style/TableEditText"/>
+    <TextView android:id="@+id/tvExtraTh" style="@style/TableTextView"/>
+    <TextView android:id="@+id/tvExtraPr" style="@style/TableTextView"/>
+    <TextView android:id="@+id/tvAmountTh" style="@style/TableTextView"/>
+    <TextView android:id="@+id/tvAmountPr" style="@style/TableTextView"/>
+    <TextView android:id="@+id/tvTotalRs" style="@style/TableTextView" android:textStyle="bold"/>
+
+</LinearLayout>

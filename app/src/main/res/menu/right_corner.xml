@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/right_item1"
+        app:showAsAction="never"
+        android:icon="@drawable/baseline_location_on_24"
+        android:title="Profile">
+
+    </item>
+    <item android:id="@+id/right_item2"
+        app:showAsAction="never"
+        android:title="About us">
+
+    </item>
+
+    <item android:id="@+id/right_item4"
+        app:showAsAction="never"
+        android:title="Settings">
+
+    </item>
+
+
+    <item android:id="@+id/right_item3"
+    app:showAsAction="never"
+    android:title="Logut">
+
+    </item>
+
+
+
+</menu>

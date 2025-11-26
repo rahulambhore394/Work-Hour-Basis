@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/light_blue"
+    android:layout_height="match_parent"
+    tools:context=".VisitorOperation.Home2Fragment">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="30dp"
+        app:cardCornerRadius="60dp"
+        app:cardElevation="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="566dp"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Activity"
+                android:textAlignment="center"
+                android:textColor="@color/lavender"
+                android:textSize="30sp"
+                android:textStyle="bold">
+
+            </TextView>
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/animation"
+                android:layout_width="273dp"
+                android:layout_height="226dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="20dp"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                app:lottie_rawRes="@raw/accounting">
+
+            </com.airbnb.lottie.LottieAnimationView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="No. of Approved : "
+                    android:textColor="@color/black"
+                    android:textSize="25dp">
+                </TextView>
+
+                <TextView
+                    android:layout_width="107dp"
+                    android:layout_height="wrap_content"
+                    android:text="NO"
+                    android:id="@+id/approvedNo"
+                    android:textColor="@color/black"
+                    android:textSize="25dp">
+
+                </TextView>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="No. of Rejected : "
+                    android:textColor="@color/black"
+                    android:textSize="25dp">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="107dp"
+                    android:layout_height="wrap_content"
+                    android:text="NO"
+                    android:id="@+id/rejectedNo"
+                    android:textColor="@color/black"
+                    android:textSize="25dp">
+
+                </TextView>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No. of Pending : "
+                    android:textColor="@color/black"
+                    android:textSize="25dp">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="107dp"
+                    android:layout_height="wrap_content"
+                    android:text="NO"
+                    android:id="@+id/pendingNo"
+                    android:textColor="@color/black"
+                    android:textSize="25dp">
+
+                </TextView>
+            </LinearLayout>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</FrameLayout>

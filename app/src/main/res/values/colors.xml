@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <color name="lavender" tools:ignore="MissingDefaultResource">#62CDFF</color>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="light_blue">#62CDFF</color>
+
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="Orange" tools:ignore="MissingDefaultResource">#F99417</color>
+    <color name="red" tools:ignore="MissingDefaultResource">#F44336</color>
+    <color name="green" tools:ignore="MissingDefaultResource">#8BC34A</color>
+    <color name="detail_color" tools:ignore="MissingDefaultResource">#020000</color>
+
+        <color name="selected_icon_color">#62CDFF</color>
+        <color name="unselected_icon_color">#888888</color>
+        <color name="disabled_icon_color">#CCCCCC</color>
+
+
+    <color name="night_code">#6124B1</color>
+    <color name="notifications">#13B2C3</color>
+    <color name="private_account">#E6A326</color>
+    <color name="security">#D95F69</color>
+
+
+
+        <color name="colorPrimary">#007AFF</color> <color name="colorPrimaryDark">#0056B3</color>
+        <color name="colorAccent">#FF9500</color>
+
+        <color name="light_gray">#F5F5F7</color> <color name="text_primary">#1D1D1F</color> <color name="text_secondary">#6E6E73</color> <color name="divider_color">#E0E0E0</color>
+
+</resources>

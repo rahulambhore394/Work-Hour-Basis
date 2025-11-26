@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/tvSrNo"
+        style="@style/TableCell.TextView"
+        android:layout_width="40dp"
+        android:text="01" />
+
+    <EditText
+        android:id="@+id/etTheoryDate"
+        style="@style/TableCell.EditText"
+        android:layout_width="0dp"
+        android:layout_weight="1.5"
+        android:hint="Date"
+        android:inputType="date" />
+
+    <EditText
+        android:id="@+id/etTheoryTime"
+        style="@style/TableCell.EditText"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:hint="Time"
+        android:inputType="time" />
+
+    <EditText
+        android:id="@+id/etTheoryDuration"
+        style="@style/TableCell.EditText"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:hint="Hrs"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/etPracticalDate"
+        style="@style/TableCell.EditText"
+        android:layout_width="0dp"
+        android:layout_weight="1.5"
+        android:hint="Date"
+        android:inputType="date" />
+
+    <EditText
+        android:id="@+id/etPracticalTime"
+        style="@style/TableCell.EditText"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:hint="Time"
+        android:inputType="time" />
+
+    <EditText
+        android:id="@+id/etPracticalDuration"
+        style="@style/TableCell.EditText"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:hint="Hrs"
+        android:inputType="numberDecimal" />
+
+</LinearLayout>

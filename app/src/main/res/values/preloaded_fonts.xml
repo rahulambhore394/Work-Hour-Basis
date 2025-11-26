@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/</item>
+        <item>@font/amethysta</item>
+        <item>@font/andika_new_basic_bold</item>
+        <item>@font/baskervville</item>
+        <item>@font/overpass_bold</item>
+        <item>@font/overpass_semibold</item>
+    </array>
+</resources>

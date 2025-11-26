@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginTop="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView style="@style/TableHeader" android:layout_width="30dp" android:text="Sr. No."/>
+        <TextView style="@style/TableHeader" android:layout_weight="1.5" android:text="Subject"/>
+        <TextView style="@style/TableHeader" android:layout_weight="1" android:text="Allocated"/>
+        <TextView style="@style/TableHeader" android:layout_weight="1" android:text="Conducted"/>
+        <TextView style="@style/TableHeader" android:layout_weight="1" android:text="Extra Load"/>
+        <TextView style="@style/TableHeader" android:layout_weight="1" android:text="Amount"/>
+        <TextView style="@style/TableHeader" android:layout_weight="0.5" android:text="Total"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Space android:layout_width="30dp" android:layout_height="1dp"/>
+        <Space android:layout_width="0dp" android:layout_height="1dp" android:layout_weight="1.5"/>
+        <TextView style="@style/TableHeaderSub" android:text="Th."/>
+        <TextView style="@style/TableHeaderSub" android:text="Pr."/>
+        <TextView style="@style/TableHeaderSub" android:text="Th."/>
+        <TextView style="@style/TableHeaderSub" android:text="Pr."/>
+        <TextView style="@style/TableHeaderSub" android:text="Th."/>
+        <TextView style="@style/TableHeaderSub" android:text="Pr."/>
+        <TextView style="@style/TableHeaderSub" android:text="Th."/>
+        <TextView style="@style/TableHeaderSub" android:text="Pr."/>
+        <TextView style="@style/TableHeaderSub" android:layout_weight="0.5" android:text="Rs."/>
+    </LinearLayout>
+
+</LinearLayout>

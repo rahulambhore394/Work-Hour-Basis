@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/reCard"
+    android:layout_margin="16dp"
+    android:layout_marginStart="12dp"
+    android:layout_marginEnd="12dp"
+    android:layout_marginHorizontal="10dp"
+    android:layout_marginVertical="10dp"
+    app:cardCornerRadius="30dp"
+    app:cardElevation="60dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/vis_name"
+            android:layout_width="189dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="12dp"
+            android:text="Visitor"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/Subject"
+            android:layout_width="147dp"
+            android:layout_marginBottom="12dp"
+            android:layout_below="@+id/vis_name"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="5dp"
+            android:text="Subject"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/animation"
+            android:layout_width="67dp"
+            android:layout_height="57dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="110dp"
+            android:layout_marginLeft="107dp"
+            android:layout_marginTop="92dp"
+            android:layout_toRightOf="@+id/Subject"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/time">
+
+        </com.airbnb.lottie.LottieAnimationView>
+
+
+        <TextView
+            android:textStyle="bold"
+            android:id="@+id/Class"
+            android:layout_width="101dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Subject"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginBottom="12dp"
+            android:maxLines="1"
+            android:text="Class"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/date1"
+            android:layout_width="124dp"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="12dp"
+            android:layout_toRightOf="@+id/vis_name"
+            android:maxLines="1"
+            android:text="Date"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+
+        <TextView
+            android:id="@+id/time1"
+            android:layout_width="147dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Subject"
+            android:layout_marginStart="160dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginBottom="12dp"
+            android:maxLines="1"
+            android:text="Time"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/type"
+            android:layout_width="66dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/date1"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="12dp"
+            android:layout_toRightOf="@+id/Subject"
+            android:maxLines="1"
+            android:text="Type"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/dcontent"
+            android:layout_width="218dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Class"
+            android:layout_marginStart="20dp"
+            android:layout_marginBottom="12dp"
+            android:textStyle="bold"
+            android:maxLines="1"
+            android:text="Content"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/student"
+            android:layout_width="143dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/date1"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="12dp"
+            android:layout_toRightOf="@+id/type"
+            android:maxLines="1"
+            android:text="Student"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/accept"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/dcontent"
+            android:layout_marginStart="50dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:backgroundTint="@color/light_blue"
+            android:background="@drawable/lavender_border"
+            android:layout_marginBottom="12dp"
+            android:text="Accept">
+
+        </Button>
+
+        <Button
+            android:id="@+id/reject"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/dcontent"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:backgroundTint="@color/light_blue"
+            android:background="@drawable/lavender_border"
+            android:layout_marginStart="200dp"
+            android:layout_marginBottom="12dp"
+            android:text="Reject"/>
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+</androidx.cardview.widget.CardView>

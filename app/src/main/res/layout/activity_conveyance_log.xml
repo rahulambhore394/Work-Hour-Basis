@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".ConveyanceLogActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SHRI GURU GOBIND SINGHJI INSTITUTE OF\nENGINEERING &amp; TECHNOLOGY, VISHNUPURI, NANDED."
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvDeptTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="DEPARTMENT OF INFORMATION TECHNOLOGY"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvSubTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Local Conveyance"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/cell_border"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/TableHeader.Cell"
+            android:layout_width="50dp"
+            android:text="Sr. No." />
+        <TextView
+            style="@style/TableHeader.Cell"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="Date" />
+        <TextView
+            style="@style/TableHeader.Cell"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="Amount" />
+        <TextView
+            style="@style/TableHeader.Cell"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:text="Details" />
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewConveyance"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        tools:listitem="@layout/list_item_conveyance" />
+
+    <Button
+        android:id="@+id/btnGeneratePdf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:padding="12dp"
+        android:text="Generate Conveyance PDF" />
+
+</LinearLayout>
